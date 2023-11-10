@@ -11,7 +11,7 @@ function StockSearcher() {
             function: "TIME_SERIES_INTRADAY",
             symbol: stockcode,
             interval: "5min",
-            apiKey: "0ZXV1UFYPYXPLADU"
+            apikey: "0ZXV1UFYPYXPLADU"
 
         }
 
@@ -19,11 +19,12 @@ function StockSearcher() {
             const response = await axios.get("https://www.alphavantage.co/query", {
                 params: alphaVantageParams
             })
-
+            console.log(response.data);
             const timeSeries = response ?.data["Time Series (5 mins)"];
             if (timeSeries) {
                 const latesttime = Object.keys(timeSeries)[0];
-                console.log(latesttime);
+                const stockValue = timeSeries[latesttime]["4. close"];
+                console.log(stockValue);
             } else {
                 throw Error("invald Response Format")
             }

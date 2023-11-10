@@ -14,13 +14,11 @@ import Feedbackpage from "./Pages/FeedbackPage";
 import Aboutpage from "./Pages/AboutPage";
 import Helppage from "./Pages/HelpPage";
 import Navbar from "./Pages/NavBar";
-import StockSearcher from "./Pages/StockSearcher";
-
+import Carsapi from "./Pages/carsAPI";
 function App() {
   return (
     <>
-      <StockSearcher />
-
+  
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path={INDEX_PATH} element={<Homepage />} />

@@ -1,5 +1,10 @@
+import logo from '../assets/Logo.png'
+
 function Homepage() {
-  return <h1>This is the home page</h1>;
+      return (
+            <img src={logo} />
+      )
+      
 }
 
 export default Homepage;

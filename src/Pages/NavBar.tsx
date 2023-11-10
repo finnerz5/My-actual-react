@@ -9,6 +9,7 @@ import {
 } from "../Constants/paths";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
+import Carsapi from "./carsAPI";
 
 function Navbar() {
   const navRef = useRef(null);
@@ -26,6 +27,7 @@ function Navbar() {
           <Link to={ABOUT_PATH}>About</Link>
           <Link to={HELP_PATH}>Help</Link>
           <Link to={FEEDBACK_PATH}>Feedback</Link>
+          <Carsapi/>
           <button
             type="button"
             className="nav-btn nav-close-btn "
