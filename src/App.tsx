@@ -14,11 +14,10 @@ import Feedbackpage from "./Pages/FeedbackPage";
 import Aboutpage from "./Pages/AboutPage";
 import Helppage from "./Pages/HelpPage";
 import Navbar from "./Pages/NavBar";
-import Carsapi from "./Pages/carsAPI";
 function App() {
   return (
     <>
-  
+      
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path={INDEX_PATH} element={<Homepage />} />
@@ -29,6 +28,7 @@ function App() {
           <Route path={NOT_FOUND_PATH} element={<Notfound />} />
         </Route>
       </Routes>
+     
     </>
   );
 }
