@@ -14,6 +14,7 @@ import Feedbackpage from "./Pages/FeedbackPage";
 import Aboutpage from "./Pages/AboutPage";
 import Helppage from "./Pages/HelpPage";
 import Navbar from "./Pages/NavBar";
+import DataForm from "./Pages/UserDataForm";
 function App() {
   return (
     <>
@@ -28,6 +29,8 @@ function App() {
           <Route path={NOT_FOUND_PATH} element={<Notfound />} />
         </Route>
       </Routes>
+
+      <DataForm/>
      
     </>
   );
